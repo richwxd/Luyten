@@ -1,9 +1,9 @@
 Luyten
 
-======
+======  
 **Fork and Upgrade**  
-Just upgrade dependencies
-Make all serialVersionUID to 1L
+* Just upgrade dependencies  
+* Make all serialVersionUID to 1L
 
 **One of the Best**  
 Java Decompiler Gui for Procyon  
