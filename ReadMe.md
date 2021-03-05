@@ -22,7 +22,7 @@ We use maven to handle our dependencies.
 ![Screen](https://i.imgur.com/phc59W6.png)
 
 ### Downloads
-[Releases](https://github.com/deathmarine/Luyten/releases/latest)  
+[Releases](https://github.com/richwxd/Luyten/releases/latest)  
 
 ### Bugs/Suggestions
 [Issues](https://github.com/deathmarine/Luyten/issues)  
