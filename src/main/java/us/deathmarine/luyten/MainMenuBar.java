@@ -43,7 +43,7 @@ import com.strobel.decompiler.languages.Languages;
  * Main menu (only MainWindow should be called from here)
  */
 public class MainMenuBar extends JMenuBar {
-	private static final long serialVersionUID = -7949855817172562075L;
+	private static final long serialVersionUID = 1L;
 	private final MainWindow mainWindow;
 	private final Map<String, Language> languageLookup = new HashMap<String, Language>();
 
@@ -630,7 +630,7 @@ public class MainMenuBar extends JMenuBar {
 	}
 
 	private class ThemeAction extends AbstractAction {
-		private static final long serialVersionUID = -6618680171943723199L;
+		private static final long serialVersionUID = 1L;
 		private String xml;
 
 		public ThemeAction(String name, String xml) {

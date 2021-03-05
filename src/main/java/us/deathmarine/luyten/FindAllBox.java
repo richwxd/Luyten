@@ -7,10 +7,6 @@ import com.strobel.decompiler.DecompilationOptions;
 import com.strobel.decompiler.DecompilerSettings;
 import com.strobel.decompiler.PlainTextOutput;
 
-import us.deathmarine.luyten.ConfigSaver;
-import us.deathmarine.luyten.MainWindow;
-import us.deathmarine.luyten.Model;
-
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -45,7 +41,7 @@ import javax.swing.GroupLayout.Alignment;
  * @version 1.1
  */
 public class FindAllBox extends JDialog {
-	private static final long serialVersionUID = -4125409760166690462L;
+	private static final long serialVersionUID = 1L;
 	private static final int MIN_WIDTH = 640;
 	private boolean searching;
 
@@ -179,7 +175,7 @@ public class FindAllBox extends JDialog {
 	}
 
 	private class FindButton extends AbstractAction {
-		private static final long serialVersionUID = 75954129199541874L;
+		private static final long serialVersionUID = 1L;
 
 		@Override
 		public void actionPerformed(ActionEvent event) {
@@ -299,7 +295,7 @@ public class FindAllBox extends JDialog {
 
 	private void setHideOnEscapeButton() {
 		Action escapeAction = new AbstractAction() {
-			private static final long serialVersionUID = 6846566740472934801L;
+			private static final long serialVersionUID = 1L;
 
 			@Override
 			public void actionPerformed(ActionEvent e) {

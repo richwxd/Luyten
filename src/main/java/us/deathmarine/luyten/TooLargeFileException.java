@@ -3,7 +3,7 @@ package us.deathmarine.luyten;
 import java.text.DecimalFormat;
 
 public class TooLargeFileException extends Exception {
-	private static final long serialVersionUID = 6091096838075139962L;
+	private static final long serialVersionUID = 1L;
 	private long size;
 
 	public TooLargeFileException(long size) {

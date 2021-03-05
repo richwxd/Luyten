@@ -55,16 +55,13 @@ public class Luyten {
 		// .zip or .jar)
 		final File fileFromCommandLine = getFileFromCommandLine(args);
 
-		SwingUtilities.invokeLater(new Runnable() {
-			@Override
-			public void run() {
-				if (!mainWindowRef.compareAndSet(null, new MainWindow(fileFromCommandLine))) {
-					// Already set - so add the files to open
-					openFileInInstance(fileFromCommandLine);
-				}
-				processPendingFiles();
-				mainWindowRef.get().setVisible(true);
+		SwingUtilities.invokeLater(() -> {
+			if (!mainWindowRef.compareAndSet(null, new MainWindow(fileFromCommandLine))) {
+				// Already set - so add the files to open
+				openFileInInstance(fileFromCommandLine);
 			}
+			processPendingFiles();
+			mainWindowRef.get().setVisible(true);
 		});
 	}
 
@@ -185,7 +182,7 @@ public class Luyten {
 							this.add(menuitem);
 						}
 
-						private static final long serialVersionUID = 562054483562666832L;
+						private static final long serialVersionUID = 1L;
 					}.show(e.getComponent(), e.getX(), e.getY());
 				}
 			}

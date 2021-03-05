@@ -36,7 +36,7 @@ import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
  * Dispatcher
  */
 public class MainWindow extends JFrame {
-	private static final long serialVersionUID = 5265556630724988013L;
+	private static final long serialVersionUID = 1L;
 
 	private static final String TITLE = "Luyten";
 
@@ -66,7 +66,7 @@ public class MainWindow extends JFrame {
 		this.setQuitOnWindowClosing();
 		this.setTitle(TITLE);
 		this.setIconImage(new ImageIcon(
-				Toolkit.getDefaultToolkit().getImage(this.getClass().getResource("/resources/Luyten.png"))).getImage());
+				Toolkit.getDefaultToolkit().getImage(this.getClass().getClassLoader().getResource("Luyten.png"))).getImage());
 
 		JPanel panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
 		label = new JLabel();
@@ -88,7 +88,7 @@ public class MainWindow extends JFrame {
 		this.getContentPane().add(model);
 
 		JSplitPane spt = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panel1, panel2) {
-			private static final long serialVersionUID = 2189946972124687305L;
+			private static final long serialVersionUID = 1L;
 			private final int location = 400;
 
 			{
@@ -279,13 +279,13 @@ public class MainWindow extends JFrame {
 		StringBuilder sb = new StringBuilder();
 		try {
 			BufferedReader reader = new BufferedReader(
-					new InputStreamReader(getClass().getResourceAsStream("/distfiles/Procyon.License.txt")));
+					new InputStreamReader(this.getClass().getClassLoader().getResourceAsStream("distfiles/Procyon.License.txt")));
 			String line;
 			while ((line = reader.readLine()) != null)
 				sb.append(line).append("\n");
 			sb.append("\n\n\n\n\n");
 			reader = new BufferedReader(
-					new InputStreamReader(getClass().getResourceAsStream("/distfiles/RSyntaxTextArea.License.txt")));
+					new InputStreamReader(this.getClass().getClassLoader().getResourceAsStream("distfiles/RSyntaxTextArea.License.txt")));
 			while ((line = reader.readLine()) != null)
 				sb.append(line).append("\n");
 		} catch (IOException e) {
@@ -412,7 +412,7 @@ public class MainWindow extends JFrame {
 
 	private void setExitOnEscWhenEnabled(JComponent mainComponent) {
 		Action escapeAction = new AbstractAction() {
-			private static final long serialVersionUID = -3460391555954575248L;
+			private static final long serialVersionUID = 1L;
 
 			@Override
 			public void actionPerformed(ActionEvent e) {

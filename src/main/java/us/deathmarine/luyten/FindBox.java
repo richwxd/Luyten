@@ -25,7 +25,7 @@ import org.fife.ui.rtextarea.SearchContext;
 import org.fife.ui.rtextarea.SearchEngine;
 
 public class FindBox extends JDialog {
-	private static final long serialVersionUID = -4125409760166690462L;
+	private static final long serialVersionUID = 1L;
 
 	JCheckBox mcase;
 	JCheckBox regex;
@@ -125,7 +125,7 @@ public class FindBox extends JDialog {
 	}
 
 	private class FindButton extends AbstractAction {
-		private static final long serialVersionUID = 75954129199541874L;
+		private static final long serialVersionUID = 1L;
 
 		@Override
 		public void actionPerformed(ActionEvent event) {
@@ -157,7 +157,7 @@ public class FindBox extends JDialog {
 
 	private void setHideOnEscapeButton() {
 		Action escapeAction = new AbstractAction() {
-			private static final long serialVersionUID = 5572504000935312338L;
+			private static final long serialVersionUID = 1L;
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -196,7 +196,7 @@ public class FindBox extends JDialog {
 		/**
 		 * 
 		 */
-		private static final long serialVersionUID = -4391670062679240573L;
+		private static final long serialVersionUID = 1L;
 		boolean direction;
 
 		public FindExploreAction(boolean forward) {

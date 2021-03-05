@@ -10,21 +10,22 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeCellRenderer;
 
 public class CellRenderer extends DefaultTreeCellRenderer {
-	private static final long serialVersionUID = -5691181006363313993L;
+	private static final long serialVersionUID = 1L;
 	Icon pack;
 	Icon java_image;
 	Icon yml_image;
 	Icon file_image;
 
 	public CellRenderer() {
+
 		this.pack = new ImageIcon(
-				Toolkit.getDefaultToolkit().getImage(this.getClass().getResource("/resources/package_obj.png")));
+				Toolkit.getDefaultToolkit().getImage(this.getClass().getClassLoader().getResource("package_obj.png")));
 		this.java_image = new ImageIcon(
-				Toolkit.getDefaultToolkit().getImage(this.getClass().getResource("/resources/java.png")));
+				Toolkit.getDefaultToolkit().getImage(this.getClass().getClassLoader().getResource("java.png")));
 		this.yml_image = new ImageIcon(
-				Toolkit.getDefaultToolkit().getImage(this.getClass().getResource("/resources/yml.png")));
+				Toolkit.getDefaultToolkit().getImage(this.getClass().getClassLoader().getResource("yml.png")));
 		this.file_image = new ImageIcon(
-				Toolkit.getDefaultToolkit().getImage(this.getClass().getResource("/resources/file.png")));
+				Toolkit.getDefaultToolkit().getImage(this.getClass().getClassLoader().getResource("file.png")));
 	}
 	
 	@Override
